@@ -8,7 +8,7 @@ pipeline {
 
     stages {
         stage('Checkout Code') {
-            step {
+            steps {
                 checkout scm
             }
         }
@@ -50,5 +50,5 @@ pipeline {
             echo '❌ Build Failed. Check the logs for details'
         }
     }
-    
+
 }
